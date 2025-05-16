@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
   branch: main
+  identity_url: https://eaeaawards.netlify.app/.netlify/identity
+  gateway_url: https://eaeaawards.netlify.app/.netlify/git
+  auth_type: token
 
 media_folder: "uploads"
 public_folder: "/uploads"
@@ -15,3 +18,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+site_url: https://eaeaawards.netlify.app
+admin_url: https://eaeaawards.netlify.app/admin
