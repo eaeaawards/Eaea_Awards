@@ -1,23 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: eaeaawards/Eaea_Awards  # badilisha na repo yako
   branch: main
-  identity_url: https://eaeaawards.netlify.app/.netlify/identity
-  gateway_url: https://eaeaawards.netlify.app/.netlify/git
-  auth_type: token
-
-media_folder: "uploads"
-public_folder: "/uploads"
-
-collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "posts"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-site_url: https://eaeaawards.netlify.app
-admin_url: https://eaeaawards.netlify.app/admin
+  auth:
+    redirect_uri: https://eaeaawards.netlify.app/admin/
