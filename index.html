@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EAEA Awards 2025</title>
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+
+    @keyframes pulseText {
+      0%, 100% { color: #ffcc00; }
+      50% { color: #ff5500; }
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.63);
+    }
+
+    .welcome-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fcd52c;
+      font-size: 24px;
+      z-index: 9999;
+      animation: fadeOut 2s ease 3s forwards;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .loading {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #fff;
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 80px 20px 40px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #fcd52c;
+      animation: fadeIn 1s ease-in;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .slideshow-container {
+      margin-top: 40px;
+    }
+
+    .footer {
+      background: rgba(0,0,0,0.85);
+      padding: 20px 10px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      color: #fcd52c;
+      font-size: 14px;
+    }
+
+    .footer .rights {
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    .footer .credit {
+      font-style: italic;
+      font-size: 12px;
+      color: #ccc;
+      white-space: nowrap;
+    }
+
+    .footer .credit span {
+      font-weight: bold;
+      font-size: 14px;
+      background: linear-gradient(to right, #ffcc00, #ff6600);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulseText 3s infinite;
+    }
+
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      z-index: 10000;
+      animation: bounce 2s infinite;
+    }
+
+    .whatsapp-icon img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Welcome Screen -->
+  <div class="welcome-screen">
+    <div>Welcome to the most prestigious celebration of East African talent - EAEA Awards 2025!</div>
+    <div class="loading">Loading...</div>
+  </div>
+
+  <!-- Background Video -->
+  <video class="video-background" autoplay muted loop id="bgVideo">
+    <source src="eaea.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- WhatsApp Icon -->
+  <div class="whatsapp-icon">
+    <a href="https://wa.me/254710910515" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <img src="Logo.jpg" alt="EAEA Logo" style="width: 150px; border-radius: 50%; margin-top: -20px;">
+    <h1>EAEA 2025</h1>
+    <p>
+      Biggest Awards Platform For East Africa Talents, Crowning Continental & Global Impact In Arts. Recognizing excellence, creativity, and impact in the East African region.
+    </p>
+    <button style="margin-top: 20px; font-size: 18px; padding: 10px 25px; background: #ffcc00; color: black; border: none; border-radius: 30px; font-weight: bold;">Vote Now</button>
+
+    <section style="margin-top: 50px;">
+      <h2 style="color: #FFD700; animation: fadeIn 2s;">Why EAEA Awards?</h2>
+      <p>
+        The East Africa Entertainment Awards (EAEA) were created to celebrate and uplift talented individuals in the entertainment industry across East Africa. From music and film to fashion and digital media, EAEA serves as a bridge connecting creatives to global opportunities.
+      </p>
+
+      <h2 style="color: #FFD700; animation: fadeIn 2s;">Voting</h2>
+      <p>
+        Fans have the power! Voting is open to the public and allows fans to support their favorite artists and entertainers. Stay tuned for the official voting period and instructions.
+      </p>
+
+      <h2 style="color: #FFD700; animation: fadeIn 2s;">Our Mission</h2>
+      <p>
+        To recognize, celebrate, and promote excellence in the entertainment sector across East Africa by providing a credible and inclusive awards platform.
+      </p>
+
+      <h2 style="color: #FFD700; animation: fadeIn 2s;">History of EAEA</h2>
+      <p>
+        Since its inception, the EAEA Awards have honored hundreds of outstanding individuals who have made significant contributions to the creative industry. The event continues to grow, inspiring the next generation of talent.
+      </p>
+    </section>
+
+    <!-- Slideshow Placeholder -->
+    <div class="slideshow-container">
+      <!-- Slideshow starts after video (JS code can control that) -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p class="rights">&copy; 2025 EAEA - All Rights Reserved</p>
+    <p class="credit">
+      WEBSITE DEVELOPMENT & DESIGN BY <span>MATO MEDIA TZ</span>
+    </p>
+  </div>
+</body>
+</html>
