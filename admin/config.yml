@@ -1,15 +1,12 @@
 backend:
-  name: github
-  repo: eaeaawards/Eaea_Awards  # Badilisha na jina sahihi la repo yako
-  branch: main
-  auth:
-    redirect_uri: https://eaeaawards.netlify.app/admin/callback  # URL sahihi ya callback
+  name: proxy
+  auth_endpoint: https://eaeaawards.netlify.app/.netlify/identity
 
-media_folder: "static/uploads"    # Mahali pa kuhifadhi faili
-public_folder: "/uploads"         # URL ya kufikia faili
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 media_library:
-  name: uploadcare  # Unaweza kutumia uploadcare au git-gateway
+  name: uploadcare
 
 collections:
   - name: "posts"
